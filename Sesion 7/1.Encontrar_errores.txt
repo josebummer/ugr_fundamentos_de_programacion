@@ -1,0 +1,46 @@
+Encuentre los errores de las siguientes funciones:
+
+int ValorAbsoluto (int entero) {
+if (entero < 0)
+entero = -entero;
+else
+return entero;
+}
+
+El fallo que tenemos es que tenemos el return dentro del else y por lo tanto si metemos un numero negativo,
+no se va a ejecutar el return y no nos va a devolver el numero cambiado de signo.
+
+------------------------------------------------------------------------------------------------------------------------------
+
+void Cuadrado (int entero) {
+return entero*entero;
+}
+
+El error es que la funcion void no devuelve ningun valor y estamos asignando un return.
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+void Imprime(double valor) {
+double valor;
+cout << valor;
+}
+
+El error esta en que estamos declarando la variable valor cuando ya la tenemos declarada arriba en la funcion.
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+bool EsPositivo(int valor) {
+if (valor > 0)
+return true;
+}
+
+En este caso estamos diciendo que si el valor introducido es mayor que 0 nos devuelva true, pero si es falso no hace nada
+cosa que no tiene sentido. Para arreglarlo lo ponemos de la siguiente manera:
+
+bool EsPositivo(int valor) {
+	bool positivo;
+	positivo = valor > 0;
+
+	return positivo;
+}
+

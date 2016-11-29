@@ -1,0 +1,14 @@
+a) 'c' es una expresión de caracteres.
+	Correcto, ya que es un solo caracter entre comillas simples.
+
+b) 4<3 es una expresión numérica.
+	Falso, al tener el < se convierte en una expresion logica
+
+c) (4+3)<5 es una expresión numérica.
+	Falso, al igual que la anterior
+
+d) cout << a; da como salida la escritura en pantalla de una a.
+	Falso, para poder mostrar por pantalla a seria de la siguiente forma: cout << "a";
+
+e) ¿Qué realiza cin >> cte, siendo cte una constante entera?
+	Va a mostrarnos un error ya que a las constantes no se les puede asignar una valor fuera de su declaracion.

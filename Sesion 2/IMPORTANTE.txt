@@ -1,0 +1,1 @@
+cout << fixed --> Nos va a mostrar los numeros doubles completos, no con 1415e^16651
